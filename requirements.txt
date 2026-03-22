@@ -1,0 +1,17 @@
+langchain
+ipykernel
+ollama
+python-dotenv
+langchain-community
+langchain-core
+langchain-groq
+# pypdf
+# bs4
+# arxiv
+pymupdf
+langchain-text-splitters
+# langchain_chroma
+sentence-transformers
+langchain-huggingface
+faiss-cpu
+python-telegram-bot==13.15

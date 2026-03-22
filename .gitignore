@@ -212,3 +212,6 @@ vectorstore/
 # Local models / cache
 *.bin
 *.pkl
+
+# venv
+prolang/
