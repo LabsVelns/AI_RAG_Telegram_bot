@@ -1,6 +1,6 @@
 langchain
-ipykernel
-ollama
+# ipykernel
+# ollama
 python-dotenv
 langchain-community
 langchain-core
