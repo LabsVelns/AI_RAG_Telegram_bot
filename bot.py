@@ -9,6 +9,10 @@ load_dotenv()
 TOKEN = os.getenv("AI_RAG_SIMPLE_bot")  # Set your bot token as an environment variable
 user_memory = {} 
 
+if not os.path.exists("vectorstore"):
+    print("Building vector DB...")
+    os.system("python ingestion.py")
+    
 # 🔹 /start
 def start(update: Update, context: CallbackContext):
     update.message.reply_text(
