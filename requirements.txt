@@ -12,8 +12,8 @@ langchain-groq
 # pymupdf
 # langchain-text-splitters
 # langchain_chroma
-sentence-transformers
+# sentence-transformers
 langchain-huggingface
 faiss-cpu
 python-telegram-bot==13.15
-torch==2.0.1 # Optimization
+# torch==2.0.1 # Optimization
