@@ -68,7 +68,7 @@ Telegram Response
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone <your-repo-url>
+git clone [<repo-url>](https://github.com/LabsVelns/AI_RAG_Telegram_bot.git)
 cd AI_RAG_Telegram_bot
 ```
 
@@ -147,7 +147,7 @@ In Telegram:
 3. User query is embedded and matched against stored vectors
 4. Top relevant chunks are retrieved
 5. Context + query is sent to **LLaMA3 (Groq)**
-6. Final answer is returned to user
+6. Final answer is returned to the user
 
 ---
 
@@ -172,13 +172,6 @@ In Telegram:
 
 * Deploy on cloud (Railway / AWS)
 * Replace local embeddings with API-based embeddings
-* Add persistent chat memory
 * Add web interface (Streamlit / React)
-
----
-
-## 🧠 Interview Summary
-
-> Built an end-to-end RAG system integrating FAISS for retrieval, Sentence Transformers for embeddings, and LLaMA3 via Groq for generation, exposed through a Telegram bot interface with conversational memory.
 
 ---
