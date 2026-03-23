@@ -58,8 +58,9 @@ def ask_question(update: Update, context: CallbackContext):
         update.message.reply_text(response)
 
     except Exception as e:
-        update.message.reply_text("❌ Error occurred.")
-
+        print("Error:", e)
+        update.message.reply_text("❗ An error occurred while processing your question.")
+    
 
 # 🔹 main
 def main():
