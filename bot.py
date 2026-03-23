@@ -48,12 +48,12 @@ def ask_question(update: Update, context: CallbackContext):
         ])
 
         response = f"""
-📌 Answer:
-{answer}
+        📌 Answer:
+        {answer}
 
-📚 Sources:
-{sources}
-"""
+        📚 Sources:
+        {sources}
+        """
 
         update.message.reply_text(response)
 
