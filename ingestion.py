@@ -1,3 +1,4 @@
+import cohere
 import fitz  # PyMuPDF
 import os
 import re
@@ -6,9 +7,15 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma,FAISS
+from langchain.embeddings.base import Embeddings
+# from dotenv import load_dotenv
+
+# load_dotenv()
 
 DATA_PATH = "data/"
 DB_PATH = "vectorstore/"
+# COHERE_API_KEY = os.getenv("COHERE_API_KEY")  # Set your Cohere API key as an environment variable
+# co = cohere.Client(COHERE_API_KEY)
 
 # 🔹 Clean text
 def clean_text(text):
@@ -86,12 +93,30 @@ def split_documents(documents):
 
     return splitter.split_documents(documents)
 
+# class CohereEmbeddings(Embeddings):
+
+#     def embed_documents(self, texts):
+#         response = co.embed(
+#             texts=texts,
+#             model="embed-english-v3.0",
+#             input_type="search_document"
+#         )
+#         return response.embeddings
+
+#     def embed_query(self, text):
+#         response = co.embed(
+#             texts=[text],
+#             model="embed-english-v3.0",
+#             input_type="search_query"
+#         )
+#         return response.embeddings[0]
 
 # 🔹 Create FAISS vectorstore
 def create_vectorstore(chunks):
     embeddings = HuggingFaceEmbeddings(
         model_name="all-MiniLM-L6-v2"
     )
+    # embeddings = CohereEmbeddings()
 
     vectorstore = FAISS.from_documents(chunks, embeddings)
     vectorstore.save_local(DB_PATH)
