@@ -176,3 +176,8 @@ In Telegram:
 
 ---
 <img width="1536" height="1024" alt="AI-RAG-Bot" src="https://github.com/user-attachments/assets/6a314922-e462-41a0-8a8f-ba986f24fcae" />
+
+---
+
+![AIRAGDemo-ezgif com-optimize](https://github.com/user-attachments/assets/ade66791-0602-4502-b67a-586ae8ce8ee1)
+
