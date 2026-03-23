@@ -209,9 +209,9 @@ __marimo__/
 # # Vector Store
 # vectorstore/
 
-# Local models / cache
-*.bin
-*.pkl
+# # Local models / cache
+# *.bin
+# *.pkl
 
 # venv
 prolang/
