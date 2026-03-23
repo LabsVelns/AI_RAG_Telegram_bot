@@ -12,7 +12,7 @@ langchain-groq
 # pymupdf
 # langchain-text-splitters
 # langchain_chroma
-# sentence-transformers
+sentence-transformers
 langchain-huggingface
 faiss-cpu
 python-telegram-bot==13.15
