@@ -175,3 +175,4 @@ In Telegram:
 * Add web interface (Streamlit / React)
 
 ---
+<img width="1536" height="1024" alt="AI-RAG-Bot" src="https://github.com/user-attachments/assets/6a314922-e462-41a0-8a8f-ba986f24fcae" />
